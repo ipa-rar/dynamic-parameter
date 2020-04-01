@@ -1,0 +1,10 @@
+<launch>
+	<node pkg="dynamic_parameter" type="arm_param_server.py" name="arm_param_server">
+	</node> 
+	<node pkg="dynamic_parameter" type="gripper_param_server.py" name="gripper_param_server">
+	</node> 
+
+	<node pkg="dynamic_parameter" type="flag_param_server.py" name="flag_param_server">
+	</node> 
+	
+</launch>
