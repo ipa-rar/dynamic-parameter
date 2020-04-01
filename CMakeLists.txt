@@ -132,9 +132,7 @@ include_directories(
 )
 
 ## Declare a C++ library
-add_library(${PROJECT_NAME}
-   src/nodes/client.cpp
- )
+
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -145,13 +143,6 @@ add_library(${PROJECT_NAME}
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(server src/nodes/server.cpp)
-
-add_dependencies(server ${PROJECT_NAME}_gencfg)
-
-add_executable(client src/nodes/client.cpp)
-
-add_dependencies(client ${PROJECT_NAME}_gencfg)
 
 
 ## Rename C++ executable without prefix
